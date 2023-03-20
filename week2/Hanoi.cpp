@@ -1,8 +1,3 @@
-//
-// Created by User on 2023-03-15.
-//
-
-
 // hanoi.cpp : Defines the entry point for the console application.
 //
 
@@ -18,6 +13,7 @@ int main(void)
         scanf("%d", &nCtr);			// 옮기는 탑의 층을 입력 받는다.
         if (nCtr <= 0)
             break;
+        // 함수 프로토타입
         void hanoi(int nDisk, int nFrom, int nTo);
         hanoi(nCtr, 1, 2);			// 탑을 1에서 2로 옮기시요.
         putchar(10);
@@ -26,11 +22,9 @@ int main(void)
 
 void hanoi(int nDisk, int nFrom, int nTo)
 {
-    // [일반규칙] H(n,i,j) ::= H(n-1,i,x), H(1,i,j), H(n-1,x,j)
-    // [진행방향] n이 1씩 감소
-    // [중단조건] n==1, 단순해 "i --> j"를 출력
     if(nDisk == 1) {
         printf("%d --> %d\n", nFrom, nTo);
+//        hanoi 함수 내에서 재귀 호출을 끝내고, 함수를 종료하는 역할을 함
         return;
     }
     int x = 6 - nFrom -nTo;

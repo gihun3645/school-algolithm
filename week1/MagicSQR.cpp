@@ -2,7 +2,7 @@
 
 #pragma warning(disable: 4326 4996 6031)
 
-#define	N	30
+#define	N   30
 
 int main(void)
 {
@@ -16,6 +16,7 @@ int main(void)
     while (1) {
         printf("? ");
         scanf("%d", &nN);
+        // 홀수
         if (nN % 2 == 0 || nN > N)
             break;
         InitMagicSquare(nMagicSqr, nN);
@@ -27,6 +28,7 @@ int main(void)
     printf("Bye, ....\n");
 }
 
+// 범위만큼 0으로 채움
 void InitMagicSquare(int nMagicSqr[N][N], int nN)
 {
     for (int nRow = 0; nRow < nN; nRow++)
@@ -34,6 +36,8 @@ void InitMagicSquare(int nMagicSqr[N][N], int nN)
             nMagicSqr[nRow][nCol] = 0;
 }
 
+
+// 마방진 생성
 void MakeMagicSquare(int nMagicSqr[N][N], int nN)
 {
     int nRow, nCol, nCell = nN * nN;

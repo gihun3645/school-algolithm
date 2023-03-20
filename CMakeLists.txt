@@ -4,9 +4,10 @@ project(알고리즘)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(1-4 week1/MagicSQR.cpp)
-add_executable(1-1 week1/Alphabet.cpp)
+add_executable(1-1 week1/Alphabet.cpp week1/MagicSQR_work.cpp)
 add_executable(1-2 week1/Gugudan.cpp)
 add_executable(1-3 week1/Caesar.cpp)
+add_executable(1-5 week1/MagicSQR_work.cpp)
 
 add_executable(2-1 week2/ArrPointer.cpp)
 add_executable(2-2 week2/Fac.cpp)
