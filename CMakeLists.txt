@@ -26,3 +26,5 @@ add_executable(3-4 week3/PrintArrayFwrd.cpp)
 add_executable(3-5 week3/23HW03.cpp)
 
 add_executable(4-1 week4/NatNo.cpp)
+
+add_executable(5-1 week5/PolyAdd.cpp)
